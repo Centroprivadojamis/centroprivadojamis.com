@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Centro Educativo Jamis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --red: #e53935;
+      --yellow: #fdd835;
+      --green: #43a047;
+      --blue: #1e88e5;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #fafafa;
+    }
+    header {
+      background: linear-gradient(to right, var(--red), var(--yellow), var(--green), var(--blue));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: white;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .lang-switch {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hidden {
+      display: none;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border: 3px solid #ccc;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function toggleLanguage() {
+      document.querySelectorAll('.es').forEach(e => e.classList.toggle('hidden'));
+      document.querySelectorAll('.en').forEach(e => e.classList.toggle('hidden'));
+    }
+  </script>
+</head>
+<body>
+  <button class="lang-switch" onclick="toggleLanguage()">ES / EN</button>
+
+  <header>
+    <h1>Centro Educativo Jamis</h1>
+    <p class="es">Educación con valores, excelencia y alegría.</p>
+    <p class="en hidden">Education with values, excellence, and joy.</p>
+  </header>
+
+  <nav>
+    <a href="#about">Nosotros / About</a>
+    <a href="#admissions">Admisiones / Admissions</a>
+    <a href="#gallery">Galería / Gallery</a>
+    <a href="#contact">Contacto / Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="es">¿Quiénes Somos?</h2>
+    <h2 class="en hidden">About Us</h2>
+    <p class="es">Somos una institución educativa comprometida con la formación integral de nuestros estudiantes.</p>
+    <p class="en hidden">We are an educational institution committed to the holistic development of our students.</p>
+  </section>
+
+  <section id="admissions">
+    <h2 class="es">Admisiones</h2>
+    <h2 class="en hidden">Admissions</h2>
+    <p class="es">Comunícate con nuestra oficina para conocer los requisitos y fechas de inscripción.</p>
+    <p class="en hidden">Contact our office to learn about requirements and registration dates.</p>
+  </section>
+
+  <section id="gallery">
+    <h2 class="es">Galería</h2>
+    <h2 class="en hidden">Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/200x150?text=Evento" alt="Evento">
+      <img src="https://via.placeholder.com/200x150?text=Aula" alt="Aula">
+      <img src="https://via.placeholder.com/200x150?text=Excursion" alt="Excursion">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="es">Contáctanos</h2>
+    <h2 class="en hidden">Contact Us</h2>
+    <p>Email: contacto@centroprivadojamis.com</p>
+    <p>Teléfono: +1 (555) 123-4567</p>
+    <p class="es">Dirección: Calle Ficticia 123, Ciudad Educativa</p>
+    <p class="en hidden">Address: 123 Fictional Street, Education City</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Centro Educativo Jamis</p>
+  </footer>
+</body>
+</html>
